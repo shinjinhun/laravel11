@@ -13,13 +13,15 @@
 </head>
 <body>
 
-@include('layouts.partials.header')
+{{--@include('layouts.partials.header')--}}
+<x-layouts.header /> <!-- 이렇게 컴포넌트 호출 -->
 
 <main>
     @yield('content')
 </main>
 
-@include('layouts.partials.footer')
+{{--@include('layouts.partials.footer')--}}
+<x-layouts.footer /> <!-- 이렇게 컴포넌트 호출 -->
 
 <!-- 공통 JS -->
 <script src="{{ asset('assets/js/script.js') }}"></script>
