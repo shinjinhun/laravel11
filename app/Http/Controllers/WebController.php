@@ -30,4 +30,9 @@ class WebController extends Controller
     {
         return view('www.test-alert');
     }
+
+    public function testButton()
+    {
+        return view('www.test-button');
+    }
 }
