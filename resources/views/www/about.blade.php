@@ -11,9 +11,15 @@
 @section('content')
     <h2>회사소개 페이지입니다.</h2>
     <ul>
-        <li><a href="{{ route('www.home') }}">메인</a></li>
-        <li><a href="{{ route('www.about') }}">회사소개</a></li>
-        <li><a href="{{ route('www.contact') }}">문의하기</a></li>
+        <li class="{{ request()->routeIs('www.home') ? 'active' : '' }}">
+            <a href="{{ route('www.home') }}">메인</a>
+        </li>
+        <li class="{{ request()->routeIs('www.about') ? 'active' : '' }}">
+            <a href="{{ route('www.about') }}">회사소개</a>
+        </li>
+        <li class="{{ request()->routeIs('www.contact') ? 'active' : '' }}">
+            <a href="{{ route('www.contact') }}">문의하기</a>
+        </li>
     </ul>
 @endsection
 
