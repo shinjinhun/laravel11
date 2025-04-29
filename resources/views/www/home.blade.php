@@ -34,6 +34,9 @@
             <li>
                 <a href="{{ route('www.test-button') }}">Button 컴포넌트 만들기 (x-ui.button)</a>
             </li>
+            <li>
+                <a href="{{ route('www.test-input') }}">Input 컴포넌트 만들기</a>
+            </li>
         </ul>
     </div>
 

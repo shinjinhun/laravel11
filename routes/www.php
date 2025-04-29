@@ -67,4 +67,5 @@
             Route::get('test-card', 'testCard')->name('test-card');    // 카드 테스트
             Route::get('/test-alert', 'testAlert')->name('test-alert');  // 알럿 테스트
             Route::get('/test-button', 'testButton')->name('test-button');  // 버튼 테스트
+            Route::get('/test-input', 'testInput')->name('test-input');  // Input 테스트
         });

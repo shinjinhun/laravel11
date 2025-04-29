@@ -35,4 +35,10 @@ class WebController extends Controller
     {
         return view('www.test-button');
     }
+
+    public function testInput()
+    {
+        return view('www.test-input');
+    }
+
 }
