@@ -26,4 +26,8 @@ class WebController extends Controller
         return view('www.test-card');
     }
 
+    public function testAlert()
+    {
+        return view('www.test-alert');
+    }
 }

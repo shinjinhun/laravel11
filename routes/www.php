@@ -64,5 +64,6 @@
             Route::get('/', 'home')->name('home');
             Route::get('about', 'about')->name('about');
             Route::get('contact', 'contact')->name('contact');
-            Route::get('test-card', 'testCard')->name('test-card');
+            Route::get('test-card', 'testCard')->name('test-card');    // 카드 테스트
+            Route::get('/test-alert', 'testAlert')->name('test-alert');  // 알럿 테스트
         });

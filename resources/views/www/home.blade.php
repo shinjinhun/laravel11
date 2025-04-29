@@ -26,8 +26,10 @@
     <div style="border:1px solid #ccc; padding: 1rem; margin-bottom: 1rem;">
         <ul>
             <li>
-{{--                <a href="/test-card">기본 슬롯 사용법</a>--}}
                 <a href="{{ route('www.test-card') }}">기본 슬롯 사용법</a>
+            </li>
+            <li>
+                <a href="{{ route('www.test-alert') }}">Alert 컴포넌트 만들기 (x-alert)</a>
             </li>
         </ul>
     </div>
