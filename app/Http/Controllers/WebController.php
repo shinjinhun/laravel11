@@ -41,4 +41,9 @@ class WebController extends Controller
         return view('www.test-input');
     }
 
+    public function testForm()
+    {
+        return view('www.test-form');
+    }
+
 }
