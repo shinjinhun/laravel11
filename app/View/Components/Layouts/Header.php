@@ -8,12 +8,14 @@ use Illuminate\View\Component;
 
 class Header extends Component
 {
+    public $title;
+
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($title = '기본 제목')
     {
-        //
+        $this->title = $title;
     }
 
     /**

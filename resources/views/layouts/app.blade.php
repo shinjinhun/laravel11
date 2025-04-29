@@ -14,7 +14,7 @@
 <body>
 
 {{--@include('layouts.partials.header')--}}
-<x-layouts.header /> <!-- 이렇게 컴포넌트 호출 -->
+<x-layouts.header title="엠투님의 홈페이지" /> <!-- 이렇게 컴포넌트 호출 -->
 
 <main>
     @yield('content')

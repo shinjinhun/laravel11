@@ -1,4 +1,5 @@
 <header>
+    <h1>{{ $title }}</h1>
     <nav>
         <ul>
             <li><a href="{{ route('www.home') }}">메인</a></li>
