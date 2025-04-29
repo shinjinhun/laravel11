@@ -20,4 +20,10 @@ class WebController extends Controller
     {
         return view('www.contact');
     }
+
+    public function testCard()
+    {
+        return view('www.test-card');
+    }
+
 }

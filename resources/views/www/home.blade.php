@@ -10,6 +10,7 @@
 
 @section('content')
     <h2>메인 페이지입니다.</h2>
+
     <ul>
         <li class="{{ request()->routeIs('www.home') ? 'active' : '' }}">
             <a href="{{ route('www.home') }}">메인</a>
@@ -21,6 +22,17 @@
             <a href="{{ route('www.contact') }}">문의하기</a>
         </li>
     </ul>
+
+    <div style="border:1px solid #ccc; padding: 1rem; margin-bottom: 1rem;">
+        <ul>
+            <li>
+{{--                <a href="/test-card">기본 슬롯 사용법</a>--}}
+                <a href="{{ route('www.test-card') }}">기본 슬롯 사용법</a>
+            </li>
+        </ul>
+    </div>
+
+
 @endsection
 
 {{-- 페이지별 JS 추가 --}}

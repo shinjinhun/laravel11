@@ -64,4 +64,5 @@
             Route::get('/', 'home')->name('home');
             Route::get('about', 'about')->name('about');
             Route::get('contact', 'contact')->name('contact');
+            Route::get('test-card', 'testCard')->name('test-card');
         });
