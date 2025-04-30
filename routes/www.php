@@ -2,6 +2,7 @@
 
     use Illuminate\Support\Facades\Route;
     use App\Http\Controllers\WebController;
+    use App\Http\Controllers\UserController;
 /*
     Route::get('/', function () {
         return view('www.home');
@@ -69,4 +70,12 @@
             Route::get('/test-button', 'testButton')->name('test-button');  // 버튼 테스트
             Route::get('/test-input', 'testInput')->name('test-input');  // Input 테스트
             Route::get('/test-form', 'testForm')->name('test-form');  // Form 테스트
+        });
+
+    Route::controller(UserController::class)
+        ->prefix('user')
+        ->name('user.')
+        ->group(function () {
+            Route::get('/create', 'create')->name('create');   // GET /user/create
+            Route::post('/', 'store')->name('store');           // POST /user
         });
